@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>angular2-google-maps app</title>
+
+    <!-- Load dependencies -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+
+     <script src="node_modules/angular2-google-maps/bundles/angular2-google-maps.js"></script>
+
+    <script>
+      System.import('app/boot').catch(function(err) {
+        console.error(err);
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- <my-app> will be our application component -->
+    <my-app>Loading
+      ...</my-app>
+  </body>
+</html>
